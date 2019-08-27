@@ -1,13 +1,13 @@
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h2>Posts</h2>
-      <ul class="list-group">
-        <app-post-list  *ngFor="let post of posts"
-                       [title]="post.title"
-                       [content]="post.content"
-                       [loveIts]="post.loveIts"
-                       [created_at]="post.created_at"></app-post-list>
-      </ul>
+
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+    <h1>
+      Bienvenue sur {{ title }}!
+    </h1>
   </div>
-</div>
+  
+  <div class="container">
+      <div class="row">
+        <app-post-list></app-post-list>
+      </div>
+  </div>
