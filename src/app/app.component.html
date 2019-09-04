@@ -1,5 +1,15 @@
 
 <!--The content below is only a placeholder and can be replaced.-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li routerLinkActive="active"><a routerLink="posts">Posts</a></li>
+        <li routerLinkActive="active"><a routerLink="form">Nouveau Post</a></li>
+    </ul>
+    </div>
+  </div>
+</nav>
 <div style="text-align:center">
     <h1>
       Bienvenue sur {{ title }}!
@@ -8,6 +18,6 @@
   
   <div class="container">
       <div class="row">
-        <app-post-list></app-post-list>
+        <router-outlet></router-outlet>
       </div>
   </div>

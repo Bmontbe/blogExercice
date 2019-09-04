@@ -10,7 +10,21 @@
       </div>
   </div>  
   <h5>{{ content }}</h5>
-  <button class="btn btn-success" (click)="addLike()">Love it</button>
-  <button class="btn btn-danger" (click)="lessLike()">Don't love it </button>
+  <div class="row">
+    <div class="col-sm-2">
+      <button class="btn btn-success" (click)="addLike()">Love it</button>
+    </div>
+    <div class="col-sm-2">
+      <button class="btn btn-danger" (click)="lessLike()">Don't love it </button>
+    </div>
+    <div class="col-sm-5">
+    </div>
+    <div class="col-sm-3">
+      <button class="btn btn-danger" (click)="delete()">Supprimer le poste </button>
+    </div>
+</div> 
+  
+  
+  
 </li>
 
